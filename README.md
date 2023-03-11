@@ -1,6 +1,7 @@
 # miniFOCctrl
 it is a super-mini  FOC Driver used by STM/GD32F405RGT6
 # 
-### 1-Hardware used LCEDA. Please open file use LCEDA.https://lceda.cn/
-### 2-Soft used Keil and CubeMX. All control methods used float because it is simple.
-### 3-When you change the power part, please change the amp gain meanwhile.
+# this hardware and software come from https://github.com/hvan110/miniFOCctrl.git 
+#
+modification:1. in my case, i'm using 3510 motor: 11 pair magnet, Rs = 7.5 ohm Ls = 1.53 mH
+             2. and using fast sin cos algorithm(from my other forked prj: foc_learning). it better then st offical dsp. 
