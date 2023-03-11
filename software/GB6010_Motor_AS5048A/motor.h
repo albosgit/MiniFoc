@@ -6,6 +6,7 @@
 #include "usart.h"
 #include "stdio.h"
 #include "tim.h"
+#include "fast_sin_cos.h"//FAST_SIN_H
 
 typedef int int32_T;
 typedef float real32_T;

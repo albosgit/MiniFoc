@@ -468,8 +468,9 @@ void Clarke_Transf(CURRENT_ABC_DEF Current_abc_temp, CURRENT_ALPHA_BETA_DEF *Cur
 ***************************************/
 void Angle_To_Cos_Sin(real32_T angle_temp, TRANSF_COS_SIN_DEF *cos_sin_temp)
 {
-	cos_sin_temp->Cos = arm_cos_f32(angle_temp);
-	cos_sin_temp->Sin = arm_sin_f32(angle_temp);
+	//cos_sin_temp->Cos = arm_cos_f32(angle_temp);
+	//cos_sin_temp->Sin = arm_sin_f32(angle_temp);
+	fast_sin_cos(angle_temp, &cos_sin_temp->Sin, &cos_sin_temp->Cos);
 }
 /***************************************
 功能：PARK变换
